@@ -1,0 +1,21 @@
+plugins {
+    id 'java'
+}
+
+group 'org.example'
+version '1.0-SNAPSHOT'
+
+repositories {
+    mavenCentral()
+    jcenter()
+}
+
+dependencies {
+    compile('org.web3j:core:4.5.16')
+    implementation files("camunda-bpmn-model-7.8.0.jar")
+    implementation files("camunda-xml-model-7.8.0.jar")
+    implementation files("OpenXES.jar")
+    implementation files("OpenXES-XStream.jar")
+    implementation files("Spex.jar")
+    testCompile('junit:junit')
+}

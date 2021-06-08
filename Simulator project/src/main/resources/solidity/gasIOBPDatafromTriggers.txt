@@ -1,0 +1,48 @@
+
+======= IOBPExec-EventLog-DataTransformation.sol:ContractCollaborationManager =======
+Gas estimation:    1,444,214
+construction:
+   infinite + 1431200 = infinite
+external:
+   addCollaborator(address,string):	infinite
+   collaboratorArray(uint256):	2047
+   createTask(string,address,uint8,uint256[],uint256):	infinite
+   getCollaboratorById(uint256):	infinite
+   getCollaboratorCount():	1080
+   getCollaborators():	infinite
+   getNoConditionValue():	1102
+   getSupervisor():	1144
+   getTaskById(uint256):	infinite
+   getTaskCount():	1079
+   getTasks():	infinite
+   getTraceCount():	1081
+   getX(uint256):	1207
+   isTaskCompletedById(uint256,uint256):	2204
+   setTaskOnCompleted(uint256,uint256,string,string,uint256):	infinite
+   tasksArray(uint256):	2070
+
+======= IOBPExec-EventLog-DataTransformation.sol:ContractEventLog =======
+Gas estimation: 522,319
+construction:
+   23110 + 449600 = 472710
+external:
+   getCurrentCaseId():	1079
+   getEvent(uint256,uint256):	infinite
+   getEventsCount(uint256):	1184
+   getNumberOfTraces():	1041
+   newInstance(uint256):	46305
+   recordEvent(uint256,string,string,address,uint256):	infinite
+
+======= IOBPExec-EventLog-DataTransformation.sol:ContractEventLogCleaner =======
+Gas estimation: 1124800
+construction:
+   infinite + 1124800 = infinite
+external:
+   clearEvent(uint256,string,string,address,uint256):	infinite
+internal:
+   checkDuplicateEvents(uint256,string memory,string memory,address,uint256):	infinite
+   checkFormBasedEventCapture(uint256,string memory,string memory,address,uint256):	infinite
+   checkMandatoryColumns(uint256,string memory,string memory):	infinite
+   swap(string memory,uint256,uint256):	infinite
+   uint2str(uint256):	infinite
+   unanchoredEvent(string memory):	infinite
